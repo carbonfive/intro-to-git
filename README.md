@@ -65,13 +65,38 @@ Additionally, we have a couple of new poems we want to add.
 ### 1) Clone the repository.
 
 The first concept we want to learn is the concept of the repository.
-Remember how I said the repository was a folder?
+Remember how I said the repository was a folder? You will want to
+*clone* the repository, which basically means *download*.
 
-### Check into that repository:
+You will want to find a directory on your computer where you want to
+store this downloaded *repository* - remember, that's just a *folder*.
 
-In this repository is a `poems/` directory.
+**Tip**: Choose a directory on your file system where you keep all your
+repositories. I keep a folder called **workspace** under my Home folder.
+Many people have a folder called *Sites*, or *Projects*.
 
+Once you clone this repository, it will show up under your folder root +
+downloaded repository. So my repository now shows up in
+*workspace/intro-to-git*.
 
+Open up your repository via Windows Explorer on a Windows computer, or
+Finder on a Mac. Show your partner!
+
+### Next up: making changes.
+
+Uh-oh. It looks like there's a typo in one of these poems. Let's start
+by opening up Emily Dickinson's *Hope is a Thing with Feathers* poem in
+the `poems` directory.
+
+Now - use your favorite text editor to fix this glaring typo. Remember
+that this is just any old file on your file system. Do you see the typo?
+Find the mistake, fix it, and save the file.
+
+Now that's all fine and dandy, but we need to let Git know that a change
+was made. We're basically telling Git to take a snapshot of the file
+system at this point in time.
+
+These snapshots are called *commit*s.
 
 ## Get in touch
 
