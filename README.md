@@ -62,7 +62,21 @@ correct them for typos and missing parts.
 
 Additionally, we have a couple of new poems we want to add.
 
-### 1) Clone the repository.
+### 1) Fork the repository from our workshop to your personal GitHub account.
+
+*Forking* is the action of copying the repository from one organizational user to
+the other. You are essentially copying the repository from my account to
+yours.
+
+1. Make sure you are signed in on Github.com.
+2. Visit https://github.com/andrewhao/git-poems.
+3. Click the "Fork" button.
+4. (Optional) You may be presented with an account to copy to. Choose
+   your preferred GitHub account to clone to.
+5. You're done - you should now have your own 'git-poems' repository at
+   your URL: https://github.com/<your-github-username>/git-poems
+
+### 2) Clone the repository.
 
 The first concept we want to learn is the concept of the repository.
 Remember how I said the repository was a folder? You will want to
@@ -82,10 +96,10 @@ downloaded repository. So my repository now shows up in
 Open up your repository via Windows Explorer on a Windows computer, or
 Finder on a Mac. Show your partner!
 
-### Next up: making changes.
+### 3) Next up: making changes.
 
 Uh-oh. It looks like there's a typo in one of these poems. Let's start
-by opening up Emily Dickinson's *Hope is a Thing with Feathers* poem in
+by opening up Emily Dickinson's *Hope Is The Thing with Feathers* poem in
 the `poems` directory.
 
 Now - use your favorite text editor to fix this glaring typo. Remember
@@ -97,6 +111,36 @@ was made. We're basically telling Git to take a snapshot of the file
 system at this point in time.
 
 These snapshots are called *commit*s.
+
+#### Add your files to the stage.
+
+The git stage is the pre-planning part of your repository where you tell
+Git what exactly changed. In this case, we want to "add" changed files
+to the repository - we are telling Git to track this file's changes.
+
+So what we want to do now is "add" the changed file to Git, marking them
+as tracked. In GitHub Desktop client, the software notices that one of
+the files has changed and auto-checks the file field for you. Having it
+checked means that you want it to be added.
+
+OK, done?
+
+#### Add a descriptive message
+
+Now we track this change for posterity. What exactly happened in this
+session? We fixed a typo. Let's make our commit message "Fixed a typo."
+
+Under the hood, Git is saving the "change" as the removal of the letter
+"j" with the message, "Fixed a typo".
+
+Click "Commit to master".
+
+Flip back to the "History" view. See that there is a stacked list of
+commits, going down into the past.
+
+### 4) Adding files
+
+..
 
 ## Get in touch
 
