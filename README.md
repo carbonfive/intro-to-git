@@ -36,7 +36,7 @@ development - today.
 
 ### What is Git?
 
-Git is powerful. 
+Git is powerful.
 
 We will be working on a folder of poems.
 
@@ -140,7 +140,42 @@ commits, going down into the past.
 
 ### 4) Adding files
 
-..
+Create a new file in the `git-poems` folder on your computer. You
+can create a text file with Microsoft Word, or with TextEdit, or with a
+code editor of your choice. Call it 'the-road-less-traveled.txt'.
+
+```
+TWO roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,as
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves newo step had trodden black.
+Oh, I kept the first for another day!
+Yet knownowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ageses hence:
+Two roads diverged in a wood, and I—
+I took the one less     traveled by,
+And that has made all the difference.
+```
+
+OK, saved it?
+
+Now go open GitHub Desktop again. You should see a new file available
+for adding.
+
+
 
 ## Get in touch
 
