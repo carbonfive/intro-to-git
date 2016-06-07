@@ -110,7 +110,7 @@ Now that's all fine and dandy, but we need to let Git know that a change
 was made. We're basically telling Git to take a snapshot of the file
 system at this point in time.
 
-These snapshots are called *commit*s.
+These snapshots are called *commit* s.
 
 #### Add your files to the stage.
 
@@ -138,11 +138,23 @@ Click "Commit to master".
 Flip back to the "History" view. See that there is a stacked list of
 commits, going down into the past.
 
+#### A very important aside on commits
+
+Remember, commits are records of changes you've made to the repository
+at any point in time.
+
+They are always accompanied by SHA values. Say it like "shaw". SHA is a
+cryptographic algorithm that ensures a unique value for your change
+across all values in the universe. Amazing, huh?!
+
+Just remember this for now: when you make a commit, you get a new SHA.
+This SHA value is the unique record of your change - every character that was added, or removed, is uniquely compressed into a scalar value.
+
 ### 4) Adding files
 
 Create a new file in the `git-poems` folder on your computer. You
 can create a text file with Microsoft Word, or with TextEdit, or with a
-code editor of your choice. Call it 'the-road-less-traveled.txt'.
+code editor of your choice. Call it 'the-road-not-taken.txt'.
 
 ```
 TWO roads diverged in a yellow wood,
@@ -151,30 +163,41 @@ And be one traveler, long I stood
 And looked down one as far as I could
 To where it bent in the undergrowth;
 
-Then took the other, as just as fair,as
+Then took the other, as just as fair,
 And having perhaps the better claim,
 Because it was grassy and wanted wear;
 Though as for that the passing there
 Had worn them really about the same,
 
 And both that morning equally lay
-In leaves newo step had trodden black.
+In leaves no step had trodden black.
 Oh, I kept the first for another day!
-Yet knownowing how way leads on to way,
+Yet knowing how way leads on to way,
 I doubted if I should ever come back.
 
 I shall be telling this with a sigh
-Somewhere ages and ageses hence:
+Somewhere ages and ages hence:
 Two roads diverged in a wood, and I—
-I took the one less     traveled by,
+I took the one less traveled by,
 And that has made all the difference.
 ```
 
 OK, saved it?
 
 Now go open GitHub Desktop again. You should see a new file available
-for adding.
+for adding. You will want to be on the "1 Uncommitted Change" tab,
+viewing changes.
 
+Select the checkbox next to the new file. Enter a description of what
+you are doing in the "Summary" field - in this case, "Adding Robert
+Frost poem" could be a good summary message. The description field is
+optional.
+
+Click "Commit to master". Now flip back to the "History" tab. Click on
+the last change we just made.
+
+Show your partner. Compare your SHAs. You got another one! Why are your SHAs different?
+Discuss.
 
 
 ## Get in touch
