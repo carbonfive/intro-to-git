@@ -108,37 +108,47 @@ yours.
 5. You're done - you should now have your own 'git-poems' repository at
    your URL: https://github.com/your-github-username/git-poems
 
-### 2) Clone the repository.
+### 2a) Create a directory on your host's computer to store repositories.
+
+You will want to find a directory on your computer where you want to
+store this downloaded *repository* - remember, that's just a *folder*.
+
+As a pair, use your operating system's file explorer to create a new, empty directory for your code to live. Code repositories will be checked out as nested folders within this folder.
+
+**Tip**: Choose a directory on your file system where you keep all your
+repositories. I keep a folder called **workspace** under my Home folder.
+Many people have a folder called *Sites*, or *Projects*. If you don't really care, you can also use the default `Documents` folder on your computer.
+
+### 2b) Clone the repository to the host's computer.
 
 The first concept we want to learn is the concept of the repository.
 Remember how I said the repository was a folder? You will want to
 *clone* the repository, which basically means *download*.
 
-You will want to find a directory on your computer where you want to
-store this downloaded *repository* - remember, that's just a *folder*.
-
-**Tip**: Choose a directory on your file system where you keep all your
-repositories. I keep a folder called **workspace** under my Home folder.
-Many people have a folder called *Sites*, or *Projects*.
-
-Once you clone this repository, it will show up under your folder root +
+Once you clone this repository, it will show up as a folder named
 downloaded repository. So my repository now shows up in
 *workspace/intro-to-git*.
 
-Open up your repository via Windows Explorer on a Windows computer, or
-Finder on a Mac. Show your partner!
+As a pair on your host's computer, open up the GitHub Desktop client software. Find the "clone" button in the upper-left hand corner, find the "git-poems" repository and choose the folder you want to clone into. Click "clone" and you're on your way:
+
+![Cloning](http://i.imgur.com/9SPLbig.gif)
+*Cloning the git-poems repository to a local folder on your computer. Here, I save it into my "workspace" folder.*
+
+Now you should see the commit list for your repository in the GitHub desktop view.
+
+Open up your repository's file folder via Windows Explorer on a Windows computer, or
+Finder on a Mac. Browse around to see the files that exist in this repository. Open them to read what they say. Show your partner!
 
 ### 3) Next up: making changes.
 
 Uh-oh. It looks like there's a typo in one of these poems. Let's start
-by opening up Emily Dickinson's *Hope Is The Thing with Feathers* poem in
-the `sonnets` directory.
+by opening up Emily Dickinson's *Hope Is The Thing with Feathers* poem.
 
-Now - use your favorite text editor to fix this glaring typo. Remember
-that this is just any old file on your file system. Do you see the typo?
+Now - use your favorite text editor to fix this glaring typo (we like to use vim, Sublime, or Atom, but anything will suffice). Remember
+that editing this file is just like changing any old file on your hard disk. Do you see the typo?
 Find the mistake, fix it, and save the file.
 
-Now that's all fine and dandy, but we need to let Git know that a change
+Now we need to do some git magic. We need to inform Git that a change
 was made. We're basically telling Git to take a snapshot of the file
 system at this point in time.
 
@@ -170,19 +180,19 @@ Click "Commit to master".
 Flip back to the "History" view. See that there is a stacked list of
 commits, going down into the past.
 
-#### A very important aside on commits
+#### 📖 A very important aside on commits 📖
 
-Remember, commits are records of changes you've made to the repository
+> Remember, commits are records of changes you've made to the repository
 at any point in time.
 
-They are always accompanied by SHA values. Say it like "shaw". SHA is a
+> They are always accompanied by SHA values. Say it like "shaw". SHA is a
 cryptographic algorithm that ensures a unique value for your change
 across all values in the universe. Amazing, huh?!
 
-Just remember this for now: when you make a commit, you get a new SHA.
+> Just remember this for now: when you make a commit, you get a new SHA.
 This SHA value is the unique record of your change - every character that was added, or removed, is uniquely compressed into a scalar value.
 
-This specific commit consists of the record of removing the typoed letter `j` from the file, `hope_is_the_thing_with_feathers.txt`.
+> This specific commit consists of the record of removing the typoed letter `j` from the file, `hope_is_the_thing_with_feathers.txt`.
 
 #### A note about git History
 
@@ -292,7 +302,7 @@ Compare the files that were downloaded. Look at the History pane. Do you see the
 
 Take some time taking turns creating new poems and committing them to your local repositories. Click "sync" to push your changes to your repository, and have your partner "sync" your new changes back down to their local computers. Then switch roles and repeat the process the other way around.
 
-### 8) Branches
+### Introducing Branches
 
 <img class="img-responsive" src="https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/hero.svg" />
 
@@ -304,7 +314,7 @@ Branches are used when we want to *diverge* from another line of work, creating 
 
 You may have noticed a thing called `master` when you worked with GitHub Desktop. Every repository has a default branch that is typically called `master`, and it's conventionally treated as the "source of truth" branch for any repository.
 
-#### Create a local branch
+### 8) Create a local branch
 
 Let's try this. Choose a member of your team to create a new branch and modify yet again another line from Emily Dickinson's poem.
 
@@ -322,11 +332,11 @@ Flip to the History view in GitHub desktop. Now go the branch dropdown and click
 
 What do you notice when you flip between the branches? Note that the latest commit only shows up on the `more-poetry` branch, and not the `master` branch.
 
-### 11) Publish your branch
+### 9) Publish your branch
 
 Clicking 'Publish' in the UI when you are in the `more-poetry` branch will synchronize your `more-poetry` branch with the GitHub branch in the cloud! See if you can find your branch on the Github.com repository for your host.
 
-### 12) Review changes with Pull Requests
+### 10) Review changes with Pull Requests
 
 Here's the part of the evening when we start to get into the truly interesting stuff. In software, we oftentimes need to do "code reviews", which are peer reviews of software code. This code needs to be laid out in a manner which makes reviewing changes easy and obvious. This is done through Pull Requests, which we often call "PR"s.
 
@@ -340,7 +350,7 @@ Now you will see a form where you describe the changes you made. This is your ch
 
 Explain why you are making these changes, and why you want these changes to be pulled into the `master` branch.
 
-<img src="http://i.giphy.com/l41YoufJiqXz5Nkze.gif" class="img-responsive" />
+<img src="http://i.gize.gif" class="img-responsive" />
 
 Click "Create pull request"
 
@@ -350,13 +360,13 @@ When you are ready, let's do the merge. Click "Merge pull request".
 
 Everybody click "Sync" on GitHub Desktop. Observe that the changes from the branch are now pulled into your local computers!
 
-### An aside on merges
+#### An aside on merges
 
 *Merging* is an action that takes one branch of code and attempts to reconcile all of its changes with another branch of code, effectively unifying them into the same code base.
 
 Open the GitHub Desktop UI. Note how you can see the results of different branches and merges show up in the tree diagram.
 
-### 7) Let's make things messy:
+### 11) Let's make things messy:
 
 At this point, your entire group's computers have the same copy of the code.
 
@@ -374,7 +384,7 @@ Uh oh. What happens?
 
 <img class="img-responsive" src="http://i.imgur.com/ksy0PyJ.png" />
 
-### 8) Conflicts are a part of life.
+### 12) Conflicts are a part of life.
 
 Welcome to the fun part of git. Working out conflicts between two code changes.
 
@@ -397,40 +407,50 @@ Look for the line between `<<<<<<<` and `=======`. That is the first change. It 
 
 Look for the line between `=======` and `>>>>>>>`. That is the second change. It says `origin/master` - which means that it is attributed to the remote repository `origin` on the `master` branch. This was likely the change the host pushed just a minute ago!
 
-#### Resolve it between yourselves
+#### How to resolve conflicts, the manual way
 
 In our world of software, this represents a real scenario where our code changes change a section of software that someone else has modified while we were working.
 
 This usually forces us to have a dialogue with the author of the other line. What did they mean by their change? Does that change affect the system in a way that I must be aware of?
 
+##### Decide how you want to resolve it
+
 Discuss between you and your partner and figure out how to resolve this conflict between you two. Do you want to keep the first line of code, ignoring the second? Do you want to keep the second, discarding the first? Or do you want to settle on a hybrid of both lines?
 
-Here's how we normally resolve these conflicts: In our text editor, we delete the `>>>` and `<<<` and `===` lines, merging the two lines above and below them into the code that "should" be there.
+### 📖 An aside on how to merge 📖
 
-In this example, we'll take a hybrid of both approaches, making this change on the non-host's computer.
+> Here's how we normally resolve these conflicts: In our text editor, we delete the `>>>` and `<<<` and `===` lines, merging the two lines above and below them into the code that "should" be there.
 
-```
-'Hope' is the thing with feathers—
-That! Should! be perching in the soul—
-And sings the tune without the words—
-And never stops—at all—
-```
+> In this example, we'll take a hybrid of both approaches, making this change on the non-host's computer.
 
-Save the file.
+    ```
+    'Hope' is the thing with feathers—
+    That! Should! be perching in the soul—
+    And sings the tune without the words—
+    And never stops—at all—
+    ```
 
-Go back to GitHub Desktop. Flip to the "1 Uncommitted Change" view. Make sure your newly saved file is checked, and note that the commit field has been pre-filled for you with a message: "Merge remote-tracking branch 'origin/master'". Additionally it is annotated with the message: `Conflicts: sonnets/hope_is_the_thing_with_feathers.txt`.
+> Save the file.
 
-Click "Commit to master". Flip to the history view:
+> Go back to GitHub Desktop. Flip to the "1 Uncommitted Change" view. Make sure your newly saved file is checked, and note that the commit field has been pre-filled for you with a message: "Merge remote-tracking branch 'origin/master'". Additionally it is annotated with the message: `Conflicts: sonnets/hope_is_the_thing_with_feathers.txt`.
 
-<img class="img-responsive" src="http://i.imgur.com/25fMRrf.png" />
+> Click "Commit to master". Flip to the history view:
 
-Look at how good that looks.
+> <img class="img-responsive" src="http://i.imgur.com/25fMRrf.png" />
+
+Observe that the "merge commit" has been made on your local computer. Click "Sync" to push your merged conflict up to GitHub, and have everybody in your group sync again to fetch the merged changes.
 
 ### Onward (e.g. extra credit)
 
 Collect some more poems - share some of your favorite poets.
 
 Find another group and submit a Pull Request to their repositories from your own. Can you figure out how to make Pull Requests work across repositories?
+
+## Further reading
+
+* https://try.github.io
+* https://www.git-tower.com/blog/git-cheat-sheet/ (see: "Best Practices" sheet)
+* http://learngitbranching.js.org/
 
 ## Get in touch!
 
