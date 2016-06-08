@@ -82,7 +82,7 @@ Writing code often resembles art. So why don't we just get to it and make some a
 
 ### ✊🏾 Step 1: Fork the `git-poems` repository to your GitHub account.
 
-1. Visit http://www.github.com/andrewhao/git-poems
+1. Visit http://www.github.com/carbonfive/git-poems
 2. Click the "Fork" button
 3. That repository is now copied to your account!
 
@@ -279,11 +279,27 @@ Commit it on your computer.
 
 ---
 
+## Compare your branches
+
+Now you've got a new commit on a branch. Browse around to see all the
+new, different changes!
+
+--
+
+Also notice that if you flip back to the `master` branch view, you won't
+see your commit show up there.
+
+---
+
 ## Publish the branch
+
+Now click "Publish" to submit your changes up to GitHub.
 
 ---
 
 ## Open a PR on GitHub
+
+
 
 ---
 
