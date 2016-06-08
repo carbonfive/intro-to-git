@@ -10,6 +10,32 @@ Carbon Five.
 * Sign up for an account on http://www.github.com.
 * Be sure to download the GitHub Desktop client (Windows or Mac): https://desktop.github.com/
 
+## Why Git?
+
+Git powers much of software development today - it enables users to keep
+track of changes to software from many different locations. It is
+decentralized enough to allow users to work on software from anywhere in
+the world.
+
+GitHub is a cloud service that hosts Git repositories. Its strength is
+in the ease in which it allows you to view and edit files, and share
+your changes with other people. It also allows you to keep a full
+history of changes to that repository - meaning that at any point in
+time you can see what files changed, how they changed, and if you want,
+you can restore changes from the past.
+
+Think back to the last time you worked on a group project at school.
+Maybe you had to work on a report or a presentation. How did you all
+manage to work on the document? Did you email it around, or send it
+around on a USB stick, CD-ROM, floppy? Do you remember how much work it
+took to make sure everybody had the same document?
+
+Then - some of you may understand this analogy - do you remember how the
+game changed when you learned how to use a cloud document service, like
+Google Docs? Suddenly, everybody had one place to go to. Changes were
+propogated and trackable. You could rest easy knowing that people's
+changes could be rolled back.
+
 ## Fundamentals
 
 ### Definitions
@@ -34,11 +60,7 @@ source control you are about to learn is what largely helps power the
 flow of software development - specifically Open Source Software
 development - today.
 
-### What is Git?
-
-Git is powerful.
-
-We will be working on a folder of poems.
+### Git & Repositories
 
 Repositories are also thought of as "file folders with special
 powers." Everything in this folder will be synced, replicated and
@@ -198,6 +220,28 @@ the last change we just made.
 
 Show your partner. Compare your SHAs. You got another one! Why are your SHAs different?
 Discuss.
+
+## Part 2: Moving to the Cloud
+
+Oh boy! We just made changes to our repository on our computer. Really,
+we've just made changes to files on our local repository. However, we
+want to get our changes up to GitHub. Why? The code needs to live
+somewhere where it's shareable. GitHub is the place to share or store
+the code.
+
+We do this by making a "push". Open GitHub Desktop and click "Sync" in
+the upper-right hand corner. What is happening here is that your desktop
+software is comparing differences between your repository and the
+original repository in GitHub. It's pushing up your changes (the fixed
+typo and the new file), then it's saving them in the cloud. Then it's
+checking if there's anything new on the cloud, and downloading them to
+your computer.
+
+Go check your repository URL. It should be at
+[http://github.com/<your-github-username>/git-poems](http://github.com/<your-github-username>/git-poems). 
+Do you see your fixed typo and new poem?
+
+
 
 
 ## Get in touch
