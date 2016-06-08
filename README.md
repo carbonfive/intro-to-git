@@ -36,7 +36,7 @@ Google Docs? Suddenly, everybody had one place to go to. Changes were
 propogated and trackable. You could rest easy knowing that people's
 changes could be rolled back.
 
-## Fundamentals
+## Intro
 
 ### Definitions
 
@@ -78,17 +78,21 @@ the folders on that remote computer.
 
 ## Today's project:
 
-Today, we are literary researchers trying to collaborate on a poem
-database. Our job is to look at the existing poems in our database and
+Today, we are literary researchers building up a poem
+catalog. Our job is to look at the existing poems in our repository and
 correct them for typos and missing parts.
 
 Additionally, we have a couple of new poems we want to add.
 
+## Part 1: Making changes with git
+
 ### Pair up!
 
-Find a partner somewhere in the room. If you must, make a group of 3. You'll be working together for much of tonight.
+Find a partner somewhere in the room. You'll be working together for much of tonight. Try to make pairs with somebody of a different Git skill level from you, so you can teach and learn from each other.
 
-OK, got your group? Now pick one person whose computer you work on. We'll this person the "host" for the purposes of this next part.
+OK, got your group? Now pick one person whose computer you work on. We'll this person the *"host"* for the purposes of this next part. The partner we'll call the *"collaborator"*.
+
+We are going to simulate a real software project, complete with a GitHub git repository in the cloud, and two (or more) collaborator working on the project at a time.
 
 ### 1) Fork the repository from our workshop to your host's personal GitHub account.
 
@@ -267,11 +271,90 @@ Go check your repository URL. It should be at
 [http://github.com/your-github-username/git-poems](http://github.com/your-github-username/git-poems).
 Do you see your fixed typo and new poem?
 
-### 6) Have your group pull down new changes
+### 6) Add your partner as a collaborator to your account
 
-Now, all you non-host folks can get your hand in the action too! Boot up your GitHub Desktop clients from your computers and *clone* the repository to your local computer.
+We need to pause here to do some administrative tasks. Open the GitHub UI, surf over to the "Settings" tab and click on the "Collaborators" sub-tab. There, you can add your partner's username as a collaborator.
+
+![Add your partner as a collaborator](http://i.imgur.com/F2zTYlY.gif)
+*Here, __andrewhao__ is adding __sueyeh__ as a collaborator to his git-poems project*
+
+Collaborators: once you've been added, you can visit your email address to confirm your account participation, or you can open your partner's GitHub repository webpage to accept your invitation.
+
+Once collaborators have confirmed their addition to the host's GitHub repository, we can move on.
+
+### 7) Have your group pull down new changes
+
+Now, all the collaborators: it's your turn! Boot up your GitHub Desktop clients from your computers and *clone* your partner's repository to your local computer.
 
 Compare the files that were downloaded. Look at the History pane. Do you see the changes that your host just recently made? Compare the SHA values. How do they compare?
+
+#### Play with it
+
+Take some time taking turns creating new poems and committing them to your local repositories. Click "sync" to push your changes to your repository, and have your partner "sync" your new changes back down to their local computers. Then switch roles and repeat the process the other way around.
+
+### 8) Branches
+
+<img class="img-responsive" src="https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/hero.svg" />
+
+We are going to introduce a new concept called the *branch*.
+
+Branches can be thought of as different streams of commits. A branch contains a list of commits and SHAs, as they are applied in order. Branches also have a diverging point - a specific commit at which they were created.
+
+Branches are used when we want to *diverge* from another line of work, creating two parallel streams of work. This is commonly done when developers work on a feature of work but do not want to interrupt other developers from working on another feature. People will create their own personal "branch" on their computers, ensuring that any changes they make will not be modified (for the time being).
+
+You may have noticed a thing called `master` when you worked with GitHub Desktop. Every repository has a default branch that is typically called `master`, and it's conventionally treated as the "source of truth" branch for any repository.
+
+#### Create a local branch
+
+Let's try this. Choose a member of your team to create a new branch and modify yet again another line from Emily Dickinson's poem.
+
+To do this, you'll want to click the 'Add a branch' button from the GitHub Desktop UI.
+
+<img class="img-responsive" src="http://i.imgur.com/4sC74j1.png" />
+
+Name the branch `more-poetry` and make sure you've selected to set 'From' to be `master`.
+
+Now you're on a branch! Fill in the rest of the Emily Dickinson poem, then create a commit.
+
+Flip to the History view in GitHub desktop. Now go the branch dropdown and click `more-poetry` - this opens a select menu that lets you choose between the branches.
+
+<img src="http://i.giphy.com/26BRBoSBcgGbccvJu.gif" class="img-responsive" />
+
+What do you notice when you flip between the branches? Note that the latest commit only shows up on the `more-poetry` branch, and not the `master` branch.
+
+### 11) Publish your branch
+
+Clicking 'Publish' in the UI when you are in the `more-poetry` branch will synchronize your `more-poetry` branch with the GitHub branch in the cloud! See if you can find your branch on the Github.com repository for your host.
+
+### 12) Review changes with Pull Requests
+
+Here's the part of the evening when we start to get into the truly interesting stuff. In software, we oftentimes need to do "code reviews", which are peer reviews of software code. This code needs to be laid out in a manner which makes reviewing changes easy and obvious. This is done through Pull Requests, which we often call "PR"s.
+
+The main goal of a GitHub Pull Request is to merge one branch into another. The secondary goal is to provide a place to view code changes and provide a place for conversations to occur.
+
+Go to the GitHub repository web page you were working on earlier: http://www.github.com/your-host-username/git-poems
+
+You should see a big green button that says "Create Pull Request" with your `more-poetry` branch name next to it. Click it.
+
+Now you will see a form where you describe the changes you made. This is your chance to explain to your project team what changes you made on your branch.
+
+Explain why you are making these changes, and why you want these changes to be pulled into the `master` branch.
+
+<img src="http://i.giphy.com/l41YoufJiqXz5Nkze.gif" class="img-responsive" />
+
+Click "Create pull request"
+
+Have everybody in the group open up the Pull Request from the Github.com interface. Have a discussion. View the code diffs. Click on a line and make some comments on the code. Suggest changes.
+
+When you are ready, let's do the merge. Click "Merge pull request".
+
+Everybody click "Sync" on GitHub Desktop. Observe that the changes from the branch are now pulled into your local computers!
+
+### An aside on merges
+
+*Merging* is an action that takes one branch of code and attempts to reconcile all of its changes with another branch of code, effectively unifying them into the same code base.
+
+Open the GitHub Desktop UI. Note how you can see the results of different branches and merges show up in the tree diagram.
 
 ### 7) Let's make things messy:
 
@@ -343,74 +426,14 @@ Click "Commit to master". Flip to the history view:
 
 Look at how good that looks.
 
-### An aside on merges
-
-*Merging* is an action that takes one branch of code and attempts to reconcile all of its changes with another branch of code, effectively unifying them into the same code base.
-
-### 9) Branches
-
-<img class="img-responsive" src="https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/hero.svg" />
-
-Okay, we kind of glossed over about a thing we call branches.
-
-Branches can be thought of as different streams of commits. A branch contains a list of commits and SHAs.
-
-Branches are used when we want to *diverge* from another line of work. You may have noticed a thing called `master` when you worked with GitHub Desktop. Every repository has a default branch that is typically called `master`.
-
-However, as software developers, we oftentimes want to go off on our own and work on some changes for some time in our own isolated view of the repository. To do this, we often create a branch off of an existing commit on the parent branch.
-
-### 10) Create a local branch
-
-Let's try this. Choose a member of your team to create a new branch and modify yet again another line from Emily Dickinson's poem.
-
-To do this, you'll want to click the 'Add a branch' button from the GitHub Desktop UI.
-
-<img class="img-responsive" src="http://i.imgur.com/4sC74j1.png" />
-
-Name the branch `more-poetry` and make sure you've selected to set 'From' to be `master`.
-
-Now you're on a branch! Fill in the rest of the Emily Dickinson poem, then create a commit.
-
-Flip to the History view in GitHub desktop. Now go the branch dropdown and click `more-poetry` - this opens a select menu that lets you choose between the branches.
-
-<img src="http://i.giphy.com/26BRBoSBcgGbccvJu.gif" class="img-responsive" />
-
-What do you notice when you flip between the branches? Note that the latest commit only shows up on the `more-poetry` branch, and not the `master` branch.
-
-### 11) Publish your branch
-
-Clicking 'Publish' in the UI when you are in the `more-poetry` branch will synchronize your `more-poetry` branch with the GitHub branch in the cloud! See if you can find your branch on the Github.com repository for your host.
-
-### 12) Review changes with Pull Requests
-
-Here's the part of the evening when we start to get into the truly interesting stuff. In software, we oftentimes need to do "code reviews", which are peer reviews of software code. This code needs to be laid out in a manner which makes reviewing changes easy and obvious. This is done through Pull Requests, which we often call "PR"s.
-
-The main goal of a GitHub Pull Request is to merge one branch into another. The secondary goal is to provide a place to view code changes and provide a place for conversations to occur.
-
-Go to the GitHub repository web page you were working on earlier: http://www.github.com/your-host-username/git-poems
-
-You should see a big green button that says "Create Pull Request" with your `more-poetry` branch name next to it. Click it.
-
-Now you will see a form where you describe the changes you made. This is your chance to explain to your project team what changes you made on your branch.
-
-Explain why you are making these changes, and why you want these changes to be pulled into the `master` branch.
-
-<img src="http://i.giphy.com/l41YoufJiqXz5Nkze.gif" class="img-responsive" />
-
-Click "Create pull request"
-
-Have everybody in the group open up the Pull Request from the Github.com interface. Have a discussion. View the code diffs. Click on a line and make some comments on the code. Suggest changes.
-
-When you are ready, let's do the merge. Click "Merge pull request".
-
-Everybody click "Sync" on GitHub Desktop. Observe that the changes from the branch are now pulled into your local computers!
-
 ### Onward (e.g. extra credit)
 
 Collect some more poems - share some of your favorite poets.
 
 Find another group and submit a Pull Request to their repositories from your own. Can you figure out how to make Pull Requests work across repositories?
 
-## Get in touch
+## Get in touch!
 
-Andrew Hao (andrew@carbonfive.com)
+Andrew Hao (andrew@carbonfive.com, @andrewhao)
+Sue Anna Yeh (sueanna@carbonfive.com, @sueannayeh)
+Greg Buckner (gregb@carbonfive.com, @thebucknerlife)

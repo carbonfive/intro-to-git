@@ -22,13 +22,13 @@ class: background-image-contain middle center background-color-white
 
 ---
 
-## Before we begin:
+### Git Smart: Setup Steps
 
 1. Connect to wifi: `carbonfive-guest` / `guestpassword`
 1. Download and install GitHub Desktop: https://desktop.github.com/
 1. Create a GitHub account for yourself.
-1. Download and install a text editor: [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/) are good ones.
-1. Open up http://g9labs.com/intro-to-git for directions.
+1. Download and install a text editor: [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+1. Open up the project instructions: http://carbonfive.github.io/intro-to-git
 
 ---
 
@@ -157,6 +157,16 @@ Now type a message about the change you made, describing why you made it. Click 
 A saved record of a set of changes to files in a repository.
 
 Also known as a *"revision"*
+
+--
+
+*This is a core concept in Git- don't miss it!*
+
+---
+
+### More on commits
+
+A repository can be thought of as the sum of its commits.
 
 ---
 
