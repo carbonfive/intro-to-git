@@ -15,7 +15,7 @@
     </div>
   <script>
 $(function() {
-  var converter = new showdown.Converter()
+  var converter = new showdown.Converter({ simplifiedAutoLink: true })
   $.ajax('./README.md').success(function(body) {
     var html = converter.makeHtml(body);
     $('.target').html(html);
@@ -24,5 +24,3 @@ $(function() {
   </script>
   </body>
 </html>
-
-
