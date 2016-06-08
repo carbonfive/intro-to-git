@@ -102,7 +102,8 @@ To fork a repository is simply to copy it to your account.
 
 It's a good idea to have a folder on your computer to store your repositories in!
 
-Make a new folder called `"Code"` within your `"Home"` folder or ``"Documents"`` folder.
+
+Make a new folder called `"Code"` within your `"Home"` folder or `"Documents"` folder.
 
 #### Help your partner when you're finished.
 
@@ -111,6 +112,7 @@ Make a new folder called `"Code"` within your `"Home"` folder or ``"Documents"``
 ### ✊🏾 Step 2b: ⚡️ Clone your repository from GitHub Desktop
 
 Now, we are about to do an action called "cloning", which is the act of copying a repository from the cloud down to your computer.
+
 
 #### Help your partner when you're finished.
 
@@ -184,6 +186,124 @@ Can you find the SHA value of your commit?
 1. Commit it with GitHub Desktop.
 
 #### Help your partner when you're finished.
+
+---
+
+# Part 2: Moving to the ☁️ (GitHub)
+
+---
+
+### Hosts: push your local repository to GitHub ("Sync")
+
+--
+
+Everybody else: Sync your repositories right after.
+
+---
+
+## Make conflicts
+
+Everybody individually modify the same line from the same poem, on your
+individual computers.
+
+--
+
+Push and sync one at a time. What happens?
+
+---
+
+## Uh oh!
+
+How do you resolve a conflict?
+
+---
+
+class: middle
+
+```
+<<<<<<< HEAD
+The quick fox jumped
+=======
+The brown fox jumped
+>>>>>>> origin/master
+```
+
+---
+
+class: middle
+
+```
+
+The quick fox jumped
+
+The brown fox jumped
+
+```
+
+---
+
+class: middle
+
+```
+The quick brown fox jumped
+```
+
+--
+
+#### Save it! Commit it!
+
+---
+
+### Push your resolved conflicts to GitHub.
+
+Then: everybody sync.
+
+---
+
+### Pick someone to make a new branch.
+
+Call it `more-poetry`
+
+---
+
+### Fill in the rest of the poem
+
+Find the Emily Dickinson "Hope is a Thing With Feathers" and fill in the
+rest of the poem.
+
+Google is allowed.
+
+--
+
+Commit it on your computer.
+
+---
+
+## Publish the branch
+
+---
+
+## Open a PR on GitHub
+
+---
+
+## Publish the PR on GitHub
+
+---
+
+## Review and merge the PR on GitHub
+
+---
+
+## Extra credit: poetry share!
+
+Add poems to our repository. Find interesting ones you'd like to share!
+Commit and push them to your GitHub accounts.
+
+--
+
+Go around to other groups and practice merging your repositories with
+each other. Who can amass the largest collection?
 
 ---
 
