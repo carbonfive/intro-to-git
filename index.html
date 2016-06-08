@@ -16,7 +16,7 @@
   <script>
 $(function() {
   var converter = new showdown.Converter()
-  $.ajax('/README.md').success(function(body) {
+  $.ajax('./README.md').success(function(body) {
     var html = converter.makeHtml(body);
     $('.target').html(html);
   });
