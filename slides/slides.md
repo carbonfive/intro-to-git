@@ -481,6 +481,8 @@ The quick brown fox jumped
 
 Then: everybody sync.
 
+---
+
 ## Extra credit: poetry share!
 
 Add poems to our repository. Find interesting ones you'd like to share!
