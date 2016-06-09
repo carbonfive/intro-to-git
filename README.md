@@ -46,9 +46,7 @@ Git is a tool in the class of software called *version control*. Version
 control software is a way for you to work with text files and know how
 files are changed.
 
-**IMAGES OF CHANGES**
-
-A *repository* is a directory of files that are under *version control*.
+A *repository* is a directory of files and folders that are under *version control*.
 
 ### History
 
@@ -139,7 +137,7 @@ Now you should see the commit list for your repository in the GitHub desktop vie
 Open up your repository's file folder via Windows Explorer on a Windows computer, or
 Finder on a Mac. Browse around to see the files that exist in this repository. Open them to read what they say. Show your partner!
 
-### 3) Next up: making changes.
+### 3) Fix a typo in one of the poems
 
 Uh-oh. It looks like there's a typo in one of these poems. Let's start
 by opening up Emily Dickinson's *Hope Is The Thing with Feathers* poem.
@@ -463,8 +461,10 @@ Find another group and submit a Pull Request to their repositories from your own
 ## Further reading
 
 * https://try.github.io
+* https://marklodato.github.io/visual-git-guide/index-en.html
 * https://www.git-tower.com/blog/git-cheat-sheet/ (see: "Best Practices" sheet)
 * http://learngitbranching.js.org/
+* http://onlywei.github.io/explain-git-with-d3/
 
 ## Get in touch!
 
