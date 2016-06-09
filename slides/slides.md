@@ -428,10 +428,12 @@ Click the big green "Merge" button when you're done!
 
 ## Make conflicts
 
+Individually, make changes to `favorite_poems.txt`.
 
---
-
-Push and sync one at a time. What happens?
+* Everybody: Find your favorite poem and add them to the file on your computer.
+* Everybody: commit to your local repository on the `master` branch.
+* Collaborator: Push your changes up to `master`.
+* Host: Sync your changes
 
 ---
 
